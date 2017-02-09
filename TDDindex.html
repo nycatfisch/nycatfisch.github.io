@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trump Days Down</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+  		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+  		crossorigin="anonymous">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' type='text/css'>
+  <link rel="stylesheet" href="TDDmain.css" type="text/css">
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 class="col-sm-4">Trump Days Down</h1>
+      <nav class="col-sm-8 text-right">
+        <h5>Today: </h5>
+        <h5 id="TodayIs">
+          <script>
+            document.getElementById("TodayIs").innerHTML = new Date();
+          </script></h5>
+      </nav>
+    </div>
+  </header>
+<section class="jumbotron" style="background-image: url('http://static1.businessinsider.com/image/566efa6172f2c15b028b56ae-480/donald-trump.jpg')">  
+  <div class="container">
+    <div class="row text-center">
+      <h2>How many days down?</h2><br>
+      <h3>Days since January 20, 2017</h3>
+<p id="daysSince"></p>
+<script>
+var today = new Date();
+var hellDate = new Date('2017-01-20');
+var timeinmilisec = today.getTime() - hellDate.getTime();
+document.getElementById("daysSince").innerHTML=(Math.floor(timeinmilisec / (1000 * 60 * 60 * 24)) );
+</script>
+<h2>How many days to go?</h2><br>
+<h3>(Assuming one term)</h3>
+<h3>Days until January 20, 2021</h3>
+<p id="daysUntil"></p>
+<script>
+var today = new Date();
+var YayDate = new Date('2021-01-20');
+var timeinmilisec = YayDate.getTime() - today.getTime(); 
+document.getElementById("daysUntil").innerHTML=1+(Math.floor(timeinmilisec / (1000 * 60 * 60 * 24)) );
+</script>
+ <!-- not sure if i need to add that +1 day to math.floor daysUntil... -->
+  </div>
+  </div>
+</section>
+   <footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy;nycatfisch 2017</p>     
+  </div>
+</footer>
+</body>

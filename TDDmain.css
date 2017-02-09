@@ -1,0 +1,109 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+header h5 {
+  padding: 0 10px;
+  margin: 0;
+}
+.jumbotron {
+  display: flex;
+  align-items: center;
+  /* background-image: url('http://static2.businessinsider.com/image/55d5d78fecad04766dbf52a8/how-much-donald-trump-makes-in-speaking-fees-compared-to-everyone-else.jpg');*/
+  /*background-image: url(''); */
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+/* images to swap */
+/* http://static1.businessinsider.com/image/566efa6172f2c15b028b56ae-480/donald-trump.jpg  */ 
+/* http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg  */
+/* http://static6.businessinsider.com/image/55918b77ecad04a3465a0a63/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg */ 
+/* http://static2.businessinsider.com/image/55d5d78fecad04766dbf52a8/how-much-donald-trump-makes-in-speaking-fees-compared-to-everyone-else.jpg */
+/* images to swap */
+/* images to swap */
+/* images to swap */
+/* images to swap */
+/* images to swap */
+
+.jumbotron h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.jumbotron p {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: black;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
