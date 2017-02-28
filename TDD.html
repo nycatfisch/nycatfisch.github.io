@@ -74,7 +74,7 @@ var elements = document.getElementsByClassName("jumbotron") ;
 </script>
   <div class="container">
     <div class="row text-center">
-      <h2>How many days down?</h2><br>
+      <h2>How many days down?</h2>
       <h3>Days since January 20, 2017</h3>
 <p id="daysSince"></p>
 <script>
@@ -84,7 +84,7 @@ var timeinmilisec = today.getTime() - hellDate.getTime();
 document.getElementById("daysSince").innerHTML=(Math.floor(timeinmilisec / (1000 * 60 * 60 * 24)) );
 </script>
 
-<h2>How many days to go?</h2><br>
+<h2>How many days left?</h2>
 <h3>(Assuming one term)</h3>
 <h3>Days until January 20, 2021</h3>
 <p id="daysUntil"></p>
