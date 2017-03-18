@@ -28,42 +28,21 @@ function switchBG() {
   /* Background image changes with random number */
   var picNum = Math.floor(Math.random() * 9) ;
   console.log(picNum) ;
-  /* console.log(picNum) ; */
-  var bg = '' /* default - no background image */
-    switch (picNum) {   
-    case 0:
-      bg = "url('http://static1.businessinsider.com/image/566efa6172f2c15b028b56ae-480/donald-trump.jpg')";
-      return bg;
-    case 1:
-      bg = "url('http://static3.businessinsider.com/image/56020a6d9dd7cc21008bc61e/donald-trump-is-going-off-on-megyn-kelly-again.jpg')";
-        return bg;
-    case 2:
-      bg = "url('http://s.newsweek.com/sites/www.newsweek.com/files/2016/06/20/donald-trump.jpg')";
-        return bg;
-    case 3:
-      bg = "url('http://ichef.bbci.co.uk/news/1024/cpsprodpb/1BC2/production/_88160170_trump-promo.jpg')";
-        return bg;
-    case 4:
-      bg = "url('http://static2.businessinsider.com/image/55d5d78fecad04766dbf52a8/how-much-donald-trump-makes-in-speaking-fees-compared-to-everyone-else.jpg')";
-        return bg;
-    case 5:
-      bg = "url('https://static01.nyt.com/images/2016/01/25/opinion/25axelrodWeb/25axelrodWeb-master768.jpg')";
-        return bg;
-    case 6:
-      bg = "url('http://static4.businessinsider.com/image/55918a4b6da811695ab77f22-480/rtx1gzco.jpg')";
-        return bg;      
-    case 7:
-      bg = "url('http://s.newsweek.com/sites/www.newsweek.com/files/styles/feature/public/2016/12/13/1111trump01.jpg')";
-        return bg;      
-    case 8:
-      bg = "url('http://static5.businessinsider.com/image/56675b4d6da8111d07c89574/a-hair-surgeon-explains-whats-going-on-with-donald-trumps-hair.jpg')";
-        return bg;
-    case 9:
-      bg = "url('http://media4.s-nbcnews.com/j/msnbc/components/video/201611/2016-11-14t12-06-44-966z--1280x720.nbcnews-ux-1080-600.jpg')";
-        return bg;                              
-    default:
-      bg = "url('https://c2.staticflickr.com/8/7151/6717697085_6d28849226_z.jpg')";
-        return bg; }
+
+  var urls = 
+      ["url('http://static1.businessinsider.com/image/566efa6172f2c15b028b56ae-480/donald-trump.jpg')",
+      "url('http://static3.businessinsider.com/image/56020a6d9dd7cc21008bc61e/donald-trump-is-going-off-on-megyn-kelly-again.jpg')",
+      "url('http://s.newsweek.com/sites/www.newsweek.com/files/2016/06/20/donald-trump.jpg')",
+      "url('http://ichef.bbci.co.uk/news/1024/cpsprodpb/1BC2/production/_88160170_trump-promo.jpg')",
+      "url('http://static2.businessinsider.com/image/55d5d78fecad04766dbf52a8/how-much-donald-trump-makes-in-speaking-fees-compared-to-everyone-else.jpg')",
+      "url('https://static01.nyt.com/images/2016/01/25/opinion/25axelrodWeb/25axelrodWeb-master768.jpg')",
+      "url('http://static4.businessinsider.com/image/55918a4b6da811695ab77f22-480/rtx1gzco.jpg')",
+      "url('http://media4.s-nbcnews.com/j/msnbc/components/video/201611/2016-11-14t12-06-44-966z--1280x720.nbcnews-ux-1080-600.jpg')",
+      "url('http://static5.businessinsider.com/image/56675b4d6da8111d07c89574/a-hair-surgeon-explains-whats-going-on-with-donald-trumps-hair.jpg')",
+      "url('http://s.newsweek.com/sites/www.newsweek.com/files/styles/feature/public/2016/12/13/1111trump01.jpg')"]
+     // "url('https://c2.staticflickr.com/8/7151/6717697085_6d28849226_z.jpg')"];
+
+  return urls[picNum]
 }
 </script>
 <section class="jumbotron" >
@@ -74,22 +53,24 @@ var elements = document.getElementsByClassName("jumbotron") ;
 </script>
   <div class="container">
     <div class="row text-center">
-      <h2>How many days down?</h2>
+      <h2>How many days down?</h2><br>
       <h3>Days since January 20, 2017</h3>
 <p id="daysSince"></p>
 <script>
 var today = new Date();
+today = new Date(today - 1000*60*today.getTimezoneOffset()) ;
 var hellDate = new Date('2017-01-20');
 var timeinmilisec = today.getTime() - hellDate.getTime();
 document.getElementById("daysSince").innerHTML=(Math.floor(timeinmilisec / (1000 * 60 * 60 * 24)) );
 </script>
 
-<h2>How many days left?</h2>
+<h2>How many days to go?</h2><br>
 <h3>(Assuming one term)</h3>
 <h3>Days until January 20, 2021</h3>
 <p id="daysUntil"></p>
 <script>
 var today = new Date();
+today = new Date(today - 1000*60*today.getTimezoneOffset()) ;
 var YayDate = new Date('2021-01-20');
 var timeinmilisec = YayDate.getTime() - today.getTime(); 
 document.getElementById("daysUntil").innerHTML=1+(Math.floor(timeinmilisec / (1000 * 60 * 60 * 24)) );
@@ -104,6 +85,4 @@ document.getElementById("daysUntil").innerHTML=1+(Math.floor(timeinmilisec / (10
   </div>
 </footer>
 </body>
-<!-- bg = "url('http://images.huffingtonpost.com/2016-07-15-1468607338-43291-DonaldTrumpangry-thumb.jpg')"; 
-bg = "url('http://a.abcnews.com/images/Politics/GTY_donald_trump_jef_161010_12x5_1600.jpg')";  -->
 </html>
