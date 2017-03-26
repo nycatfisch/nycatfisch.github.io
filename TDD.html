@@ -25,8 +25,8 @@
   <!-- <section class="jumbotron" style="background-image: url('http://static1.businessinsider.com/image/566efa6172f2c15b028b56ae-480/donald-trump.jpg')">  -->
   <script type='text/javascript'>
 function switchBG() {
-  /* Jumbotron background image changes with random number generated bet 0 & 9 */
-  var picNum = Math.floor(Math.random() * 9) ;
+  /* Jumbotron background image changes with random number generated bet 0 & 13 */
+  var picNum = Math.floor(Math.random() * 13) ;
   console.log(picNum) ;
 
   var urls = 
@@ -35,11 +35,16 @@ function switchBG() {
       "url('http://s.newsweek.com/sites/www.newsweek.com/files/2016/06/20/donald-trump.jpg')",
       "url('http://ichef.bbci.co.uk/news/1024/cpsprodpb/1BC2/production/_88160170_trump-promo.jpg')",
       "url('http://static2.businessinsider.com/image/55d5d78fecad04766dbf52a8/how-much-donald-trump-makes-in-speaking-fees-compared-to-everyone-else.jpg')",
+      "url('http://i.imgur.com/ikQnbyk.jpg')",
       "url('https://static01.nyt.com/images/2016/01/25/opinion/25axelrodWeb/25axelrodWeb-master768.jpg')",
       "url('http://static4.businessinsider.com/image/55918a4b6da811695ab77f22-480/rtx1gzco.jpg')",
-      "url('http://media4.s-nbcnews.com/j/msnbc/components/video/201611/2016-11-14t12-06-44-966z--1280x720.nbcnews-ux-1080-600.jpg')",
+      "url('http://i2.cdn.turner.com/money/dam/assets/170121175334-sean-spicer-press-secretary-statement-1100x619.jpg')",
+      "url('http://pixel.nymag.com/imgs/fashion/daily/2017/02/01/01-steve-bannon-food-diary.w600.h315.2x.jpg')",
       "url('http://static5.businessinsider.com/image/56675b4d6da8111d07c89574/a-hair-surgeon-explains-whats-going-on-with-donald-trumps-hair.jpg')",
-      "url('http://s.newsweek.com/sites/www.newsweek.com/files/styles/feature/public/2016/12/13/1111trump01.jpg')"]
+      "url('http://s.newsweek.com/sites/www.newsweek.com/files/styles/feature/public/2016/12/13/1111trump01.jpg')",
+      "url('http://pixel.nymag.com/imgs/daily/intelligencer/2017/01/30/30-stephen-miller.w710.h473.2x.jpg')",
+      "url('http://media4.s-nbcnews.com/j/msnbc/components/video/201611/2016-11-14t12-06-44-966z--1280x720.nbcnews-ux-1080-600.jpg')"
+      ]
 /* "url('https://c2.staticflickr.com/8/7151/6717697085_6d28849226_z.jpg')"]; */
   return urls[picNum] }
 </script>
@@ -78,7 +83,7 @@ document.getElementById("daysUntil").innerHTML=1+(Math.floor(timeinmilisec / (10
   </div>
 </section>
 <footer class="container">
-  <div class="row">
+  <div class="row"  >
   		<p class="col-xs-12">&copy;nycatfisch 2017</p> 
   </div>
 </footer>
