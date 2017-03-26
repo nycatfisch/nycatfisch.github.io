@@ -25,7 +25,7 @@
   <!-- <section class="jumbotron" style="background-image: url('http://static1.businessinsider.com/image/566efa6172f2c15b028b56ae-480/donald-trump.jpg')">  -->
   <script type='text/javascript'>
 function switchBG() {
-  /* Background image changes with random number */
+  /* Jumbotron background image changes with random number generated bet 0 & 9 */
   var picNum = Math.floor(Math.random() * 9) ;
   console.log(picNum) ;
 
@@ -40,10 +40,8 @@ function switchBG() {
       "url('http://media4.s-nbcnews.com/j/msnbc/components/video/201611/2016-11-14t12-06-44-966z--1280x720.nbcnews-ux-1080-600.jpg')",
       "url('http://static5.businessinsider.com/image/56675b4d6da8111d07c89574/a-hair-surgeon-explains-whats-going-on-with-donald-trumps-hair.jpg')",
       "url('http://s.newsweek.com/sites/www.newsweek.com/files/styles/feature/public/2016/12/13/1111trump01.jpg')"]
-     // "url('https://c2.staticflickr.com/8/7151/6717697085_6d28849226_z.jpg')"];
-
-  return urls[picNum]
-}
+/* "url('https://c2.staticflickr.com/8/7151/6717697085_6d28849226_z.jpg')"]; */
+  return urls[picNum] }
 </script>
 <section class="jumbotron" >
 <script>
@@ -81,7 +79,7 @@ document.getElementById("daysUntil").innerHTML=1+(Math.floor(timeinmilisec / (10
 </section>
 <footer class="container">
   <div class="row">
-    <p class="col-sm-4">&copy;nycatfisch 2017</p>     
+  		<p class="col-xs-12">&copy;nycatfisch 2017</p> 
   </div>
 </footer>
 </body>
