@@ -14,7 +14,8 @@ footer .row {
 }
 
 header h1 {
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 30px;
   margin: 0;
 }
 
@@ -57,7 +58,12 @@ header h5 {
   margin: 0 0 5px;
   color: #fff;
 }
-
+.jumbotron h4 {
+  font-size: 14px;
+  text-shadow: 2px 2px #000000;
+  margin: 0 0 10px ;
+  color: #fff;
+}
 .jumbotron p {
   font-size: 65px;
   font-weight: 700;
